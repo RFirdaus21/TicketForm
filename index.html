@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Ur Ticket</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2>Ur Ticket</h2>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="content">
+            <form name="form-fill">
+                <label>Nama : </label>
+                <input type="text" name="nama" id="nama" required> 
+                <label>Tujuan : </label> 
+                    <select name="tujuan" id="tujuan" required>
+                        <option value="">---Pilih---</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="makassar">Makassar</option>
+                        <option value="semarang">Semarang</option>
+                        <option value="sleman">Sleman</option>
+                        <option value="palembang">Palembang</option>
+                    </select>
+                
+                <label>Harga Tiket : </label>
+                    <input type="number" name="harga" id="harga">
+                
+                <label>Jumlah Tiket : </label>
+                    <select name="jumlah" id="jumlah"required>
+                        <option value="">---Pilih---</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                
+                <label>Member : </label> 
+                <input type="checkbox" id="member" name="member">
+                
+                <label>Diskon : </label> 
+                    <input type="text"name="diskon" id="diskon" readonly>
+                
+                <label>Total Bayar :</label>
+                <input type="text" id="hasil" name="hasil">
+    
+                <div class="tombol" >
+                    <label>
+                        <button type="click" id="proceed">Proses</button>
+                        <button type="finish" id="finish">Bayar</button>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+
+        <script type="text/javascript" src="app.js"></script>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
